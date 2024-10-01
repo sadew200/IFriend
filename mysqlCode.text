@@ -1,0 +1,5 @@
+drop database if exists IFriend;
+create database IFriend;
+use IFriend;
+
+create table Contacts(ContactID varchar(5) primary key,Name varchar(20),PhoneNumber varchar(10)unique,Birthday date,salary decimal(10,2) check(salary>0));
